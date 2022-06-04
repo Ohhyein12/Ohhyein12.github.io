@@ -241,6 +241,9 @@
 				                  </p>
 				                  <p>
 				                  	<strong>Keyword</strong> <br>
+				                  	# Session
+				                  	# Filter
+				                  	# Listener
 				                  	# JAVA 
 				                  	# MVC  
 				                  	# JS 
@@ -252,6 +255,7 @@
 				                  	# 결제 
 				                  	# 관리자 
 				                  	# 상세검색
+				                  	# 로그인
 				                  </p>
 				                  <p>
 				                  	개발 인원 : 6명 <br>
@@ -260,6 +264,8 @@
 				                  	사용자는 인기별, 최신순별로 사료를 추천받을수 있습니다.<br>
 				                  	관리자는 관리자 페이지에서 상품별, 날짜별, 카테고리별, 브랜드별로 chart를 확인할 수 있습니다.<br>
 				                  	사용자는 리뷰와 QnA를 작성할 수 있습니다.<br>
+				                  	Session을 사용해 로그인을 관리하고 있습니다.<br>
+				                  	filter와 listener를 사용해 ... ( 추가)
 				                 </p>
 					             <p>
 				                  	<strong>Development Environment</strong> <br>
@@ -291,40 +297,40 @@
 				                  <i class="icon-pen2"></i>
 				               </div>
 				               <div class="timeline-label">
-				               	<h2>E-BOOK SHOP <span> 2021.9</span></h2>
-				               	  <h2 style="color:#46AAFF;"><strong>전자책 쇼핑몰</strong></h2>	
+				               	<h2>CashBook<span> 2021.4</span></h2>
+				               	  <h2 style="color:#46AAFF;"><strong>캘린더 기반의 가계부 프로그램(아직 배포 안함)</strong></h2>	
 				                  <p>
-				                  	<img src="images/shop.png" style="width: 80%;">
+				                  	<img src="images/cashbook.PNG" style="width: 80%;">
 				                  </p>
 				                  <p>
 				                  	<strong>Keyword</strong> <br>
+				                  	# Session
 				                  	# MVC 
-				                  	# Model1 
+				                  	# Model2 
 				                  	# DataBase 
 				                  	# CURD 
 				                  	# Java Script 
 				                  	# BootStrap 
 				                  	<br>
-				                  	# 쇼핑몰  
-				                  	# 후기 
-				                  	# QnA 
-				                  	# 게시판 
-				                  	# 페이징 
-				                  	# 관리자 
+				                  	# Calendar 
+				                  	# DAO 
+				                  	# 가계부
+				                  	# 로그인
 				                  </p>
 				                  <p>
-			                 		Model1 방식으로 전자책 쇼핑몰을 구현하였습니다.<br>
-			                 		관리자 페이지에서 전자책을 관리하고, 수정할 수 있도록 했습니다.<br>
-			                 		카테고리 삭제 시에는 관련 전자책도 삭제처리 하기 위해서 DB의 외래키 제약을 사용했습니다.<br>
-			                 		관리자 페이지나 index 페이지에서는 가장 많이 팔린 책이나 최근 공지사항을 보여줍니다.<br>
-			                 		회원은 주문을 하고 주문조회를 할 수 있으며, 주문 목록에서 후기를 작성할 수 있습니다.<br>
-			                 		데이터 조회시 페이징 처리를 하여서 데이터를 조회하기 편하게 구현하였습니다.
+			                 		캘린더를 만들고 날짜 별로 가계부를 작성하고 관리할 수 있는 시스템 입니다.<br>
+									간단한 DB와 Model2 방식으로 구현했으며, 간단한 css와 boot strap을 사용해 레이아웃 설정 및 디자인을 했습니다.<br>
+									사용자의 로그인 정보로 캘린더 내에 가계부 정보를 불러오며, hashtag도 추가 할 수 있습니다.<br>
+									사용자는 가계부의 수입, 지출을 입력, 수정, 삭제 할 수 있습니다.<br>
+									테스트 데이터를 직접 생성하여 간단한 DB를 생성하였습니다.<br>
+									model2 방식인 Controller , DAO , JSP로 나누어 만든 웹 페이지입니다.<br>
+									Session을 이용해 로그인을 관리하고 있습니다.<br>
 				                  </p>
 				                  <p>
 				                  	<strong>Development Environment</strong> <br>
 				                  	OS : Window10 <br>
-				                  	Library : jQuery, Servlet, BootStrap, JSP <br>
-				                  	Language : HTML5, CSS3 , Java(openJDK 11.0.13), JavaScript<br>
+				                  	Library  : Servlet, BootStrap <br>
+				                  	Language : HTML5, CSS3 , Java(openJDK 11.0.13)<br>
 				                  	Database : MariaDB, HeidiSQL <br>
 				                  	WAS : Apache Tomcat9 <br>
 				                  	IDE : Eclipse 2021-12
@@ -335,9 +341,9 @@
 				                  	Platform : AWS Lightsail
 				                  </p>
 				                  <p>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('images/shop_erd.png')">ERD</button>
-				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/koi190306/shop')">Github</button>
-				                  	<button type="button" class="btn btn-primary" onclick="window.open('http://3.35.48.160/shop/index.jsp')">프로젝트</button>
+				                  	<button type="button" class="btn btn-link" onclick="window.open('images/shop_erd.png')">ERD(아직)</button>
+				                  	<button type="button" class="btn btn-link" onclick="window.open('https://github.com/Ohhyein12/cashbook')">Github</button>
+				                  	<button type="button" class="btn btn-primary" onclick="window.open('#')">프로젝트( 아직)</button>
 				                  </p>
 				               </div>
 				            </div>
@@ -349,10 +355,10 @@
 				                  <i class="icon-pen2"></i>
 				               </div>
 				               <div class="timeline-label">
-				               	<h2>to-do Calendar <span> 2021.10</span></h2>
-				               	  <h2 style="color:#46AAFF;"><strong>캘린더 기반의 일정관리 프로그램</strong></h2>	
+				               	<h2>Sakila <span> 2021.10</span></h2>
+				               	  <h2 style="color:#46AAFF;"><strong>사킬라(미완성 - 내꺼 아님)</strong></h2>	
 				                  <p>
-				                  	<img src="images/todo.png" style="width: 80%;">
+				                  	<img src="images/cashbook.PNG" style="width: 80%;">
 				                  </p>
 				                  <p>
 				                  	<strong>Keyword</strong> <br>
@@ -423,13 +429,16 @@
 				                  	# 갤러리
 				                  	# 방명록
 				                  	# PDF자료실
+				                  	# 페이징
 				                  </p>
 				                  <p>
 				                  	<strong>First Project</strong><br>
 				                  	개발 인원 : 개인<br>
 				                  	블로그로 게시판, 갤러리, 방명록, PDF자료실 사용이 가능한 시스템입니다.<br>
-				                  	간단한 DB와 Model 1방식으로 구현했으며, 간단한 css와 boot strap을 사용해 레이아웃 설정 및 디자인을 했습니다.<br>
-				                  	갤러리페이지는 반응형 css를 구현하였습니다.<br>
+				                  	간단한 DB와 Model 1방식으로 구현했으며, <br>
+				                  	간단한 css와 boot strap을 사용해 레이아웃 설정 및 디자인을 했습니다.<br>
+				                  	UpMenu와 갤러리페이지는 반응형 css를 구현하였습니다.<br>
+				                  	페이징 처리를 통해 프로그램을 편하게 사용하도록 구현했습니다<br>
 				                  	cos.jar 라이브러리를 통해 사진을 업로드 했습니다.<br>
 				                  	cos.jar 라이브러리를 통해 PDF파일을 업로드 했습니다.<br>
 				                  	Model 1 방식으로 dao, jsp 만으로 구현한 웹 프로젝트입니다<br>
